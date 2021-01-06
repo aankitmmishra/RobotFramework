@@ -15,7 +15,7 @@ Test Timeout    50s
 
 *** Test Cases ***
 TC001
-    [Documentation]    This is a practice test
+    [Documentation]    This is a practice test to test decumentation
     [Timeout]    50s
   # Login to TC Application   ${UserName}  ${Password}
    TC_001 Variable Test
