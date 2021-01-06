@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20210106 11:15:43.348" rpa="false">
+<suite id="s1" name="RobotAutomation" source="P:\Desktop\Eclipse Projects New\RobotAutomation">
+<suite id="s1-s1" name="TestCases" source="P:\Desktop\Eclipse Projects New\RobotAutomation\TestCases">
+<suite id="s1-s1-s1" name="Open Close Browser" source="P:\Desktop\Eclipse Projects New\RobotAutomation\TestCases\Open_Close_Browser.robot">
+<test id="s1-s1-s1-t1" name="TC001">
+<kw name="TC_001 Variable Test" library="DefineDisplayVariables">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>HellowWorld</arg>
+</arguments>
+<assign>
+<var>${Var}</var>
+</assign>
+<msg timestamp="20210106 11:15:46.435" level="INFO">${Var} = HellowWorld</msg>
+<status status="PASS" starttime="20210106 11:15:46.432" endtime="20210106 11:15:46.435"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var}</arg>
+</arguments>
+<status status="PASS" starttime="20210106 11:15:46.436" endtime="20210106 11:15:46.439"></status>
+</kw>
+<status status="PASS" starttime="20210106 11:15:46.414" endtime="20210106 11:15:46.440"></status>
+</kw>
+<kw name="TC_001 Create List" library="DefineDisplayVariables">
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>xyz</arg>
+<arg>123</arg>
+<arg>23.40</arg>
+<arg>xyz123</arg>
+</arguments>
+<assign>
+<var>@{List1}</var>
+</assign>
+<msg timestamp="20210106 11:15:46.444" level="INFO">@{List1} = [ xyz | 123 | 23.40 | xyz123 ]</msg>
+<status status="PASS" starttime="20210106 11:15:46.442" endtime="20210106 11:15:46.444"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${List1}</arg>
+</arguments>
+<assign>
+<var>${listlength}</var>
+</assign>
+<msg timestamp="20210106 11:15:46.446" level="INFO">Length is 4</msg>
+<msg timestamp="20210106 11:15:46.447" level="INFO">${listlength} = 4</msg>
+<status status="PASS" starttime="20210106 11:15:46.445" endtime="20210106 11:15:46.448"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${listlength}</arg>
+</arguments>
+<status status="PASS" starttime="20210106 11:15:46.449" endtime="20210106 11:15:46.450"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${List1}</arg>
+<arg>3</arg>
+</arguments>
+<assign>
+<var>${listdata}</var>
+</assign>
+<msg timestamp="20210106 11:15:46.453" level="INFO">${listdata} = xyz123</msg>
+<status status="PASS" starttime="20210106 11:15:46.451" endtime="20210106 11:15:46.454"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${listdata}</arg>
+</arguments>
+<status status="PASS" starttime="20210106 11:15:46.454" endtime="20210106 11:15:46.456"></status>
+</kw>
+<status status="PASS" starttime="20210106 11:15:46.441" endtime="20210106 11:15:46.457"></status>
+</kw>
+<kw name="TC_001 For Loop" library="DefineDisplayVariables">
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>xyz</arg>
+<arg>123</arg>
+<arg>23.40</arg>
+<arg>xyz123</arg>
+</arguments>
+<assign>
+<var>@{List1}</var>
+</assign>
+<msg timestamp="20210106 11:15:46.460" level="INFO">@{List1} = [ xyz | 123 | 23.40 | xyz123 ]</msg>
+<status status="PASS" starttime="20210106 11:15:46.459" endtime="20210106 11:15:46.461"></status>
+</kw>
+<kw name="${i} IN [ @{List1} ]" type="for">
+<kw name="${i} = xyz" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20210106 11:15:46.463" endtime="20210106 11:15:46.465"></status>
+</kw>
+<status status="PASS" starttime="20210106 11:15:46.462" endtime="20210106 11:15:46.467"></status>
+</kw>
+<kw name="${i} = 123" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20210106 11:15:46.469" endtime="20210106 11:15:46.471"></status>
+</kw>
+<status status="PASS" starttime="20210106 11:15:46.467" endtime="20210106 11:15:46.472"></status>
+</kw>
+<kw name="${i} = 23.40" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20210106 11:15:46.473" endtime="20210106 11:15:46.475"></status>
+</kw>
+<status status="PASS" starttime="20210106 11:15:46.472" endtime="20210106 11:15:46.475"></status>
+</kw>
+<kw name="${i} = xyz123" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20210106 11:15:46.477" endtime="20210106 11:15:46.479"></status>
+</kw>
+<status status="PASS" starttime="20210106 11:15:46.476" endtime="20210106 11:15:46.479"></status>
+</kw>
+<status status="PASS" starttime="20210106 11:15:46.461" endtime="20210106 11:15:46.479"></status>
+</kw>
+<status status="PASS" starttime="20210106 11:15:46.458" endtime="20210106 11:15:46.481"></status>
+</kw>
+<kw name="TC_001 Store Variables" library="DefineDisplayVariables">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>Log To Console</arg>
+</arguments>
+<assign>
+<var>${Variable}</var>
+</assign>
+<msg timestamp="20210106 11:15:46.485" level="INFO">${Variable} = Log To Console</msg>
+<status status="PASS" starttime="20210106 11:15:46.483" endtime="20210106 11:15:46.485"></status>
+</kw>
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Variable}</arg>
+<arg>aankit.mmishra@gmail.com</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>aankit.mmishra@gmail.com</arg>
+</arguments>
+<status status="PASS" starttime="20210106 11:15:46.487" endtime="20210106 11:15:46.488"></status>
+</kw>
+<status status="PASS" starttime="20210106 11:15:46.486" endtime="20210106 11:15:46.489"></status>
+</kw>
+<status status="PASS" starttime="20210106 11:15:46.482" endtime="20210106 11:15:46.490"></status>
+</kw>
+<kw name="TC_001 Conditional Keyword" library="DefineDisplayVariables">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>YES</arg>
+</arguments>
+<assign>
+<var>${Variable}</var>
+</assign>
+<msg timestamp="20210106 11:15:46.493" level="INFO">${Variable} = YES</msg>
+<status status="PASS" starttime="20210106 11:15:46.491" endtime="20210106 11:15:46.494"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Variable}'=='YES'</arg>
+<arg>Log To Console</arg>
+<arg>Value Found</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Value Found</arg>
+</arguments>
+<status status="PASS" starttime="20210106 11:15:46.495" endtime="20210106 11:15:46.497"></status>
+</kw>
+<status status="PASS" starttime="20210106 11:15:46.494" endtime="20210106 11:15:46.498"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Variable}'=='NO'</arg>
+<arg>Log To Console</arg>
+<arg>Value Not Found</arg>
+</arguments>
+<status status="PASS" starttime="20210106 11:15:46.498" endtime="20210106 11:15:46.499">
