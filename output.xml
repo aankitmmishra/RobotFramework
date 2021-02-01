@@ -1,282 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20210106 12:45:48.919" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20210201 16:36:32.016" rpa="false">
 <suite id="s1" name="RobotFramework" source="P:\Desktop\GitHub\RobotFramework">
-<suite id="s1-s1" name="RobotAutomation" source="P:\Desktop\GitHub\RobotFramework\RobotAutomation">
-<suite id="s1-s1-s1" name="TestCases" source="P:\Desktop\GitHub\RobotFramework\RobotAutomation\TestCases">
-<suite id="s1-s1-s1-s1" name="Open Close Browser" source="P:\Desktop\GitHub\RobotFramework\RobotAutomation\TestCases\Open_Close_Browser.robot">
+<suite id="s1-s1" name="RobotTest" source="P:\Desktop\GitHub\RobotFramework\RobotTest">
+<suite id="s1-s1-s1" name="TestCases" source="P:\Desktop\GitHub\RobotFramework\RobotTest\TestCases">
+<suite id="s1-s1-s1-s1" name="Test My Store" source="P:\Desktop\GitHub\RobotFramework\RobotTest\TestCases\Test My Store.robot">
 <test id="s1-s1-s1-s1-t1" name="TC001">
-<kw name="TC_001 Variable Test" library="DefineDisplayVariables">
-<kw name="Set Variable" library="BuiltIn">
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<arguments>
-<arg>HellowWorld</arg>
-</arguments>
-<assign>
-<var>${Var}</var>
-</assign>
-<msg timestamp="20210106 12:45:52.734" level="INFO">${Var} = HellowWorld</msg>
-<status status="PASS" starttime="20210106 12:45:52.731" endtime="20210106 12:45:52.734"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${Var}</arg>
-</arguments>
-<status status="PASS" starttime="20210106 12:45:52.734" endtime="20210106 12:45:52.736"></status>
-</kw>
-<status status="PASS" starttime="20210106 12:45:52.729" endtime="20210106 12:45:52.737"></status>
-</kw>
-<kw name="TC_001 Create List" library="DefineDisplayVariables">
-<kw name="Create List" library="BuiltIn">
-<doc>Returns a list containing given items.</doc>
-<arguments>
-<arg>xyz</arg>
-<arg>123</arg>
-<arg>23.40</arg>
-<arg>xyz123</arg>
-</arguments>
-<assign>
-<var>@{List1}</var>
-</assign>
-<msg timestamp="20210106 12:45:52.740" level="INFO">@{List1} = [ xyz | 123 | 23.40 | xyz123 ]</msg>
-<status status="PASS" starttime="20210106 12:45:52.738" endtime="20210106 12:45:52.740"></status>
-</kw>
-<kw name="Get Length" library="BuiltIn">
-<doc>Returns and logs the length of the given item as an integer.</doc>
-<arguments>
-<arg>${List1}</arg>
-</arguments>
-<assign>
-<var>${listlength}</var>
-</assign>
-<msg timestamp="20210106 12:45:52.742" level="INFO">Length is 4</msg>
-<msg timestamp="20210106 12:45:52.743" level="INFO">${listlength} = 4</msg>
-<status status="PASS" starttime="20210106 12:45:52.741" endtime="20210106 12:45:52.743"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${listlength}</arg>
-</arguments>
-<status status="PASS" starttime="20210106 12:45:52.743" endtime="20210106 12:45:52.745"></status>
-</kw>
-<kw name="Get From List" library="Collections">
-<doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<arguments>
-<arg>${List1}</arg>
-<arg>3</arg>
-</arguments>
-<assign>
-<var>${listdata}</var>
-</assign>
-<msg timestamp="20210106 12:45:52.747" level="INFO">${listdata} = xyz123</msg>
-<status status="PASS" starttime="20210106 12:45:52.745" endtime="20210106 12:45:52.747"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${listdata}</arg>
-</arguments>
-<status status="PASS" starttime="20210106 12:45:52.747" endtime="20210106 12:45:52.749"></status>
-</kw>
-<status status="PASS" starttime="20210106 12:45:52.737" endtime="20210106 12:45:52.750"></status>
-</kw>
-<kw name="TC_001 For Loop" library="DefineDisplayVariables">
-<kw name="Create List" library="BuiltIn">
-<doc>Returns a list containing given items.</doc>
-<arguments>
-<arg>xyz</arg>
-<arg>123</arg>
-<arg>23.40</arg>
-<arg>xyz123</arg>
-</arguments>
-<assign>
-<var>@{List1}</var>
-</assign>
-<msg timestamp="20210106 12:45:52.753" level="INFO">@{List1} = [ xyz | 123 | 23.40 | xyz123 ]</msg>
-<status status="PASS" starttime="20210106 12:45:52.751" endtime="20210106 12:45:52.753"></status>
-</kw>
-<kw name="${i} IN [ @{List1} ]" type="for">
-<kw name="${i} = xyz" type="foritem">
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${i}</arg>
-</arguments>
-<status status="PASS" starttime="20210106 12:45:52.754" endtime="20210106 12:45:52.756"></status>
-</kw>
-<status status="PASS" starttime="20210106 12:45:52.754" endtime="20210106 12:45:52.757"></status>
-</kw>
-<kw name="${i} = 123" type="foritem">
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${i}</arg>
-</arguments>
-<status status="PASS" starttime="20210106 12:45:52.758" endtime="20210106 12:45:52.760"></status>
-</kw>
-<status status="PASS" starttime="20210106 12:45:52.757" endtime="20210106 12:45:52.760"></status>
-</kw>
-<kw name="${i} = 23.40" type="foritem">
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${i}</arg>
-</arguments>
-<status status="PASS" starttime="20210106 12:45:52.762" endtime="20210106 12:45:52.763"></status>
-</kw>
-<status status="PASS" starttime="20210106 12:45:52.761" endtime="20210106 12:45:52.764"></status>
-</kw>
-<kw name="${i} = xyz123" type="foritem">
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${i}</arg>
-</arguments>
-<status status="PASS" starttime="20210106 12:45:52.764" endtime="20210106 12:45:52.766"></status>
-</kw>
-<status status="PASS" starttime="20210106 12:45:52.764" endtime="20210106 12:45:52.766"></status>
-</kw>
-<status status="PASS" starttime="20210106 12:45:52.753" endtime="20210106 12:45:52.766"></status>
-</kw>
-<status status="PASS" starttime="20210106 12:45:52.750" endtime="20210106 12:45:52.767"></status>
-</kw>
-<kw name="TC_001 Store Variables" library="DefineDisplayVariables">
-<kw name="Set Variable" library="BuiltIn">
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<arguments>
-<arg>Log To Console</arg>
-</arguments>
-<assign>
-<var>${Variable}</var>
-</assign>
-<msg timestamp="20210106 12:45:52.769" level="INFO">${Variable} = Log To Console</msg>
-<status status="PASS" starttime="20210106 12:45:52.768" endtime="20210106 12:45:52.769"></status>
-</kw>
-<kw name="Run Keyword" library="BuiltIn">
-<doc>Executes the given keyword with the given arguments.</doc>
-<arguments>
-<arg>${Variable}</arg>
-<arg>aankit.mmishra@gmail.com</arg>
-</arguments>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>aankit.mmishra@gmail.com</arg>
-</arguments>
-<status status="PASS" starttime="20210106 12:45:52.770" endtime="20210106 12:45:52.771"></status>
-</kw>
-<status status="PASS" starttime="20210106 12:45:52.769" endtime="20210106 12:45:52.773"></status>
-</kw>
-<status status="PASS" starttime="20210106 12:45:52.767" endtime="20210106 12:45:52.773"></status>
-</kw>
-<kw name="TC_001 Conditional Keyword" library="DefineDisplayVariables">
-<kw name="Set Variable" library="BuiltIn">
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<arguments>
-<arg>YES</arg>
-</arguments>
-<assign>
-<var>${Variable}</var>
-</assign>
-<msg timestamp="20210106 12:45:52.775" level="INFO">${Variable} = YES</msg>
-<status status="PASS" starttime="20210106 12:45:52.773" endtime="20210106 12:45:52.775"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>'${Variable}'=='YES'</arg>
-<arg>Log To Console</arg>
-<arg>Value Found</arg>
-</arguments>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>Value Found</arg>
-</arguments>
-<status status="PASS" starttime="20210106 12:45:52.778" endtime="20210106 12:45:52.780"></status>
-</kw>
-<status status="PASS" starttime="20210106 12:45:52.776" endtime="20210106 12:45:52.780"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>'${Variable}'=='NO'</arg>
-<arg>Log To Console</arg>
-<arg>Value Not Found</arg>
-</arguments>
-<status status="PASS" starttime="20210106 12:45:52.781" endtime="20210106 12:45:52.791"></status>
-</kw>
-<status status="PASS" starttime="20210106 12:45:52.773" endtime="20210106 12:45:52.792"></status>
-</kw>
-<kw name="TC_001 Execute Java Script and Mouse movements" library="DefineDisplayVariables">
+<kw name="Launch the website" library="LandingPage">
 <kw name="Open Browser" library="Selenium2Library">
-<doc>Opens a new browser instance to the given ``url``.</doc>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
-<arg>https://www.google.com/</arg>
+<arg>${url}</arg>
 <arg>Chrome</arg>
 </arguments>
-<msg timestamp="20210106 12:45:52.794" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com/'.</msg>
-<status status="PASS" starttime="20210106 12:45:52.793" endtime="20210106 12:45:56.125"></status>
+<msg timestamp="20210201 16:36:32.591" level="INFO">Opening browser 'Chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20210201 16:36:32.589" endtime="20210201 16:36:36.437"></status>
 </kw>
-<kw name="Go To" library="Selenium2Library">
-<doc>Navigates the active browser instance to the provided ``url``.</doc>
-<arguments>
-<arg>https://timesofindia.indiatimes.com/</arg>
-</arguments>
-<msg timestamp="20210106 12:45:56.128" level="INFO">Opening url 'https://timesofindia.indiatimes.com/'</msg>
-<status status="PASS" starttime="20210106 12:45:56.126" endtime="20210106 12:46:29.705"></status>
+<status status="PASS" starttime="20210201 16:36:32.588" endtime="20210201 16:36:36.439"></status>
 </kw>
-<kw name="Maximize Browser Window" library="Selenium2Library">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210106 12:46:29.707" endtime="20210106 12:46:30.174"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>5</arg>
-</arguments>
-<msg timestamp="20210106 12:46:35.180" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20210106 12:46:30.176" endtime="20210106 12:46:35.180"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="container"]/div[6]/div/div/div[2]/div[2]/span[2]/span</arg>
-</arguments>
-<msg timestamp="20210106 12:46:35.183" level="INFO">Clicking element '//*[@id="container"]/div[6]/div/div/div[2]/div[2]/span[2]/span'.</msg>
-<status status="PASS" starttime="20210106 12:46:35.181" endtime="20210106 12:46:35.407"></status>
-</kw>
-<kw name="Press Key" library="Selenium2Library">
-<doc>Deprecated use `Press Keys` instead.</doc>
-<arguments>
-<arg>//*[@id="toi-login"]/div[1]/form/ul/li[1]/p/input</arg>
-<arg>abc@gmail.com</arg>
-</arguments>
-<status status="PASS" starttime="20210106 12:46:35.408" endtime="20210106 12:46:35.569"></status>
-</kw>
-<kw name="Press Key" library="Selenium2Library">
-<doc>Deprecated use `Press Keys` instead.</doc>
-<arguments>
-<arg>//*[@id="sso-signInButtonDiv"]/input</arg>
-<arg>\\13</arg>
-</arguments>
-<status status="PASS" starttime="20210106 12:46:35.569" endtime="20210106 12:46:35.807"></status>
-</kw>
-<status status="PASS" starttime="20210106 12:45:52.792" endtime="20210106 12:46:35.808"></status>
-</kw>
-<doc>This is a practice test to test decumentation</doc>
 <timeout value="50 seconds"></timeout>
-<status status="PASS" starttime="20210106 12:45:52.726" endtime="20210106 12:46:35.809" critical="yes"></status>
+<status status="PASS" starttime="20210201 16:36:32.587" endtime="20210201 16:36:36.440" critical="yes"></status>
 </test>
 <doc>This is test again</doc>
-<status status="PASS" starttime="20210106 12:45:49.639" endtime="20210106 12:46:35.812"></status>
+<status status="PASS" starttime="20210201 16:36:32.194" endtime="20210201 16:36:36.442"></status>
 </suite>
-<status status="PASS" starttime="20210106 12:45:49.560" endtime="20210106 12:46:35.888"></status>
+<status status="PASS" starttime="20210201 16:36:32.181" endtime="20210201 16:36:36.448"></status>
 </suite>
-<status status="PASS" starttime="20210106 12:45:49.485" endtime="20210106 12:46:35.927"></status>
+<status status="PASS" starttime="20210201 16:36:32.169" endtime="20210201 16:36:36.455"></status>
 </suite>
-<status status="PASS" starttime="20210106 12:45:49.284" endtime="20210106 12:46:35.967"></status>
+<status status="PASS" starttime="20210201 16:36:32.114" endtime="20210201 16:36:36.460"></status>
 </suite>
 <statistics>
 <total>
@@ -287,9 +38,9 @@
 </tag>
 <suite>
 <stat pass="1" fail="0" id="s1" name="RobotFramework">RobotFramework</stat>
-<stat pass="1" fail="0" id="s1-s1" name="RobotAutomation">RobotFramework.RobotAutomation</stat>
-<stat pass="1" fail="0" id="s1-s1-s1" name="TestCases">RobotFramework.RobotAutomation.TestCases</stat>
-<stat pass="1" fail="0" id="s1-s1-s1-s1" name="Open Close Browser">RobotFramework.RobotAutomation.TestCases.Open Close Browser</stat>
+<stat pass="1" fail="0" id="s1-s1" name="RobotTest">RobotFramework.RobotTest</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="TestCases">RobotFramework.RobotTest.TestCases</stat>
+<stat pass="1" fail="0" id="s1-s1-s1-s1" name="Test My Store">RobotFramework.RobotTest.TestCases.Test My Store</stat>
 </suite>
 </statistics>
 <errors>
