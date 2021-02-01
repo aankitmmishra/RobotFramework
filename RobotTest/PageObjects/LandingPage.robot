@@ -11,6 +11,7 @@ ${url}    http://automationpractice.com/index.php
 *** Keyword ***
 Launch the website
     Open Browser     ${url}    Chrome
+    Maximize Browser Window
     
     
     
