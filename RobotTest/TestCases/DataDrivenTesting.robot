@@ -1,6 +1,5 @@
 *** Settings ***
-Documentation     A test suite with a single test for PHPTRAVELS | Travel Technology Partner
-...               Created by hats' Robotcorder
+Documentation     This is a test got Git test test test
 Library           Selenium2Library    timeout=10
 
 *** Variables ***
