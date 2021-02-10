@@ -1,0 +1,10 @@
+{ 
+	"LandingPageLocator":
+		{ 
+			"url":"http://automationpractice.com/index.php",
+			"Test":"Test"
+		
+		}
+
+
+}
