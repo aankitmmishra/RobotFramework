@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<keywordspec name="Selenium2Library" type="LIBRARY" format="ROBOT" scope="GLOBAL" namedargs="true" generated="2021-02-01T16:59:12Z" specversion="2" source="C:\Users\amishra\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\Selenium2Library\__init__.py" lineno="25">
-=======
-<keywordspec name="Selenium2Library" type="LIBRARY" format="ROBOT" scope="GLOBAL" namedargs="true" generated="2021-02-01T16:49:07Z" specversion="2" source="C:\Users\amishra\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\Selenium2Library\__init__.py" lineno="25">
->>>>>>> branch 'master' of https://github.com/aankitmmishra/RobotFramework.git
+<keywordspec name="Selenium2Library" type="LIBRARY" format="ROBOT" scope="GLOBAL" namedargs="true" generated="2021-02-09T11:22:18Z" specversion="2" source="C:\Users\amishra\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\Selenium2Library\__init__.py" lineno="25">
 <version>3.0.0</version>
 <scope>global</scope>
 <namedargs>yes</namedargs>

@@ -15,3 +15,11 @@ Test Timeout    50s
 *** Test Cases ***
 TC001
     Launch the website
+   
+
+
+  
+   
+    
+
+
