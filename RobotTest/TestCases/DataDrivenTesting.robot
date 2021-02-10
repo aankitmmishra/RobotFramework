@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     This is a test got Git test test test
+Documentation     This is a test got Git test test test test test test
 Library           Selenium2Library    timeout=10
 
 *** Variables ***
