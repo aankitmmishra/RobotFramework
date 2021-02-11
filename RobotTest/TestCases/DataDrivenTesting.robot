@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation     This is a test got Git test test test test test test
 Library           Selenium2Library    timeout=10
+Suite Teardown    Suite shutdown
 
 *** Variables ***
 ${BROWSER}    chrome
@@ -18,5 +19,10 @@ PHPTRAVELS | Travel Technology Partner test
     Input Text    //input[@name="checkout"]    30-04-2021
     Click Element    //button[@class="btn btn-primary btn-block"]
     Click Link    //div[@Class='ml-auto rtl-mr-auto o1']/a 
-
     Close Browser
+    
+
+*** Keywords ***
+Suite shutdown
+    Close Browser
+     
