@@ -4,7 +4,22 @@
 			"url":"http://automationpractice.com/index.php",
 			"Test":"Test"
 		
-		}
+		},
+		
+	"QDOSLogin":
+		{
+	       "url":"http://qdosstatusreviewtest.tmhcc.com/",
+	       "username":"qdosuser@test.com",
+	       "password":"Password@123",
+	       "usernamxpath":"//*[@id='EmailAddress']",
+	       "passwordxpath":"//*[@id='Password']",
+	       "loginbutton":"//*[@class='row']/div/div/button"
+	
+	 	}
+		
+		
+		
+	
 
 
 }
